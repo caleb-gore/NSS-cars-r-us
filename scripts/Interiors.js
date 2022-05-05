@@ -12,7 +12,7 @@ document.addEventListener(
                 }
             )
             setInterior(chosenOption.id)
-            window.alert(`You have chosen ${chosenOption.interior}`)
+            // window.alert(`You have chosen ${chosenOption.interior}`)
         }
     }
 )

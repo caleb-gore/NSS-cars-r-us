@@ -27,7 +27,7 @@ const buildOrder = (order) => {
     })
     
     
-    const totalPrice = chosenPaint.price + chosenInterior.price + chosenTech.price + chosenWheel.price
+    const totalPrice = (chosenPaint.price + chosenInterior.price + chosenTech.price + chosenWheel.price) * document.querySelector('#type option:checked').value
     
     const costString = totalPrice.toLocaleString("en-US", {
         style: "currency",
@@ -41,11 +41,8 @@ const buildOrder = (order) => {
 export const Orders = () => {
     const orders = getOrders()
 
-    let html = `<ul>`
-
-    const listItems = orders.map(buildOrder)
+    const listItem = orders.find(order => orders.indexOf(order) === orders.length -1)
+    const html = buildOrder(listItem)
     
-    html += listItems.join("")
-    html += `</ul>`
     return html
 }
