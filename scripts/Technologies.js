@@ -12,7 +12,7 @@ document.addEventListener(
                 }
             )
             setTech(chosenOption.id)
-            window.alert(`You have chosen ${chosenOption.package}`)
+            // window.alert(`You have chosen ${chosenOption.package}`)
         }
     }
 )

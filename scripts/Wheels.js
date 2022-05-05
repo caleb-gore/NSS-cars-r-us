@@ -12,7 +12,7 @@ document.addEventListener(
                 }
             )
             setWheel(chosenOption.id)
-            window.alert(`You have chosen ${chosenOption.wheel}`)
+            // window.alert(`You have chosen ${chosenOption.wheel}`)
         }
     }
 )

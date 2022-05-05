@@ -12,7 +12,7 @@ document.addEventListener(
                 }
             )
             setColor(chosenOption.id)
-            window.alert(`You have chosen ${chosenOption.color}`)
+            // window.alert(`You have chosen ${chosenOption.color}`)
         }
     }
 )
